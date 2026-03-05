@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.shape.*?>
+
+<VBox alignment="CENTER" spacing="20.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/17.0.12" fx:controller="school.coda.luisactt.ellofxml.HelloController">
+    <padding>
+        <Insets bottom="160" left="120" right="120" top="160" />
+    </padding>
+    <Rectangle fx:id="monRectangle"
+               onMouseClicked="#onRectangleClick"
+               arcHeight="5.0"
+               arcWidth="5.0"
+               fill="#2cae00"
+               height="141.0"
+               stroke="BLACK"
+               strokeType="INSIDE"
+               width="274.0" />
+
+
+    <Label fx:id="welcomeText" />
+    <Button onAction="#onHelloButtonClick" prefHeight="27.0" prefWidth="104.0" text="Afficher/Cacher" />
+    <Slider fx:id="monSlider"
+            min="50"
+            max="400"
+            value="274"
+            onMouseDragged="#onSliderChange"/>
+</VBox>
